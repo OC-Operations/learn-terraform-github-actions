@@ -11,7 +11,7 @@ terraform {
   }
   required_version = ">= 0.14"
 
-  terraform {
+  
   backend "remote" {
     organization = "OpenCyon"
 
@@ -19,7 +19,7 @@ terraform {
       name = "gh-actions-demo"
     }
   }
-}
+
 }
 
 
