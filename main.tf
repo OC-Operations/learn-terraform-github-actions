@@ -11,18 +11,20 @@ terraform {
   }
   required_version = ">= 0.14"
 
+  terraform {
   backend "remote" {
-    organization = "REPLACE_ME"
+    organization = "OpenCyon"
 
     workspaces {
       name = "gh-actions-demo"
     }
   }
 }
+}
 
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 
